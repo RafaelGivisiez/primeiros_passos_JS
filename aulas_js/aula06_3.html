@@ -11,7 +11,12 @@
    <script>
       var nome = window.prompt('Qual é seu nome')
       document.write(`Seu nome tem ${nome.length} letras.<br/>`)// IMPORTANTE entender que pra esse código(template string) as (aspas) são diferentes
+      // length <-- diz quantos caracteres tem na string nome
       // document.write('') escreve na tela (``) <-- essas aspas pra incluir o template string
+      // <br/> quebra de linha, pula pra linha de baixo 
+      document.write(`Olá, ${nome}. Seu nome em maiúsculas fica assim: <strong>${nome.toUpperCase}</strong>.<br/>`)
+      // <strong>texto</strong> <--- deixa em negrito
+      document.write(`Seu nome em minúscula fica <strong>${nome.toLowerCase}</strong>.<br/>`)
    </script>
 
 </body>
