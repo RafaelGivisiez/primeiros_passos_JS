@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros Passos JS</title>
+    <style>
+       body {background-color: rgba(51, 51, 221, 0.863);
+        color: white;
+        font: normal 20pt arial;
+    }    /* DENTRO do CSS fazer comentários só funciona com "barra asterisco, asterisco barra"*/
+    p {color: rgba(243, 235, 235, 0.884); font: normal 14pt arial;}
+    h3 {color: black}
+
+    </style>
+</head>
+<body>
+   <h1>Olá, mundo!</h1> <!--"exclamação 2 tracinhos" (para fazer comentários no BODY dentro da parte do HTML, os "barra barra" "//" não funcionam!!)-->
+   <p>Já me livrei da maldição.</p>
+
+   <script>
+      var nome01 = (window.prompt('Qual é seu nome?'))
+      var n1 = Number.parseInt(window.prompt('Digite um número: ')) 
+      // a variavel vai receber o prompt convertido pra number do tipo inteiro
+      var n2 = Number.parseInt(window.prompt('Digite outro número: '))
+      var s = n1 + n2
+      window.alert('A soma dos valores é ' + s +' '+nome01)
+      
+      // ENTENDA o SINAL DE MAIS  " + "
+      // (number + number) para adição
+      // (string + string) para concatenação(junção)
+      // o JS lê o retorno de um "window.prompt" como um STRING
+      /* Para o JS conseguir ler o retorno do PROMPT como number, precisa ser feito
+      uma conversão, que será da seguinte forma:
+      Number.parseInt(n) <-- do tipo inteiro (10 /  5  / 99 / 30) OBS: window.prompt precisa estar dentro de parenteses
+      Number.parseFloat(n) <-- do tipo real  (10.5 /  4.5  etc) OBS: window.prompt precisa estar dentro de parenteses
+      Number(n) <-- o Atual J.S/Ecma consegue ler e entender somente "number" e identificar se é do tipo inteiro ou real
+      OBS: mas somente o "Number(n) não descarta os outros modelos, para casos em que eu precise forçar 
+      que seja digitado e captado um número inteiro etc...*/
+      /* CONVERTER DE NUMBER PARA STRING: 
+      String(n)  ou 
+      n.toString()*/
+      /* Fazer concatenação de variavel entregando em string:
+      ex:
+      var nome = Rafael
+      var idade = 33
+      var nota = 5.5
+      // declaração
+      ('O aluno' + nome 'tem ' + idade ' e tirou nota ' + nota)
+      // declaração no novo formato JS/ecma <-- reconhece e facilita usando " template string" e ficará assim:
+      ('O aluno ${nome} tem ${idade} e tirou nota ${nota}') */
+      
+      //TODAS AS ANOTAÇÕES TAMBÉM SEGUEM EM CADERNO.
+   </script>
+</body>
+</html>
