@@ -5,19 +5,28 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Aula 06_3</title>
+   <style> /* Inicio CSS*/
+      body {
+         background-color: rgba(29, 29, 236, 0.836);
+         font: normal 20pt times; color: white;
+         }
+          /*FIM CSS*/
+   </style> 
 </head>
-<body>
-   
+<body> <!-- Início do HTML -->
+       <!-- lembrando que o Script fica dentro do body, que faz parte HTML -->
    <script>
       var nome = window.prompt('Qual é seu nome')
       document.write(`Seu nome tem ${nome.length} letras.<br/>`)// IMPORTANTE entender que pra esse código(template string) as (aspas) são diferentes
       // length <-- diz quantos caracteres tem na string nome
       // document.write('') escreve na tela (``) <-- essas aspas pra incluir o template string
-      // <br/> quebra de linha, pula pra linha de baixo 
-      document.write(`Olá, ${nome}. Seu nome em maiúsculas fica assim: <strong>${nome.toUpperCase}</strong>.<br/>`)
+      // <br/> (break roll) quebra de linha, pula pra linha de baixo 
+      document.write(`Olá, ${nome}. Seu nome em maiúsculas fica assim: <strong>${nome.toUpperCase()}</strong>.<br/>`)
       // <strong>texto</strong> <--- deixa em negrito
-      document.write(`Seu nome em minúscula fica <strong>${nome.toLowerCase}</strong>.<br/>`)
+      // string.toUpperCase() <--- letras maiusculas
+      document.write(`Seu nome em minúscula fica <strong>${nome.toLowerCase()}</strong>.<br/>`)
+      // string.toLowerCase() <-- letras minúsculas
    </script>
-
+   
 </body>
 </html>
