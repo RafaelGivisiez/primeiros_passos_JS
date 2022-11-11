@@ -42,6 +42,25 @@
       var f = b % e + 4 / e (resposta: 3)  <-- mesma ordem de precedência, faz quem aparece PRIMEIRO...
       (((((((((((              Atribuições Simples está JPEG na pasta PRINT             )))))))))))
 
+      AUTO-ATRIBUIÇÃO
+      var n = 3     (n vale 3) <--- atribuição simples
+      ((((((  as de baixos são auto-atribuições  ))))))
+      var n = n + 4 (n vale 3+4= 7 <-- agora n vale 7)
+      var n = n - 5 (n vale 7-5 = 2 <-- agora n vale 2)
+      var n = n*4  (n vale 2*4 = 8 <--- agora n vale 8)
+      var n = n/2 (n vale 8/2 = 4 <-- agora n vale 4)
+      var n = n**2 (n vale 4**2 = 16 <-- potencia, "ao quadrado", agora n vale 16)
+      var n = n % 5 (n vale 16 % 5 = 1 <-- resto da divisão entre 16por 5 = 1 ,  agora n vale 1)
+      
+      SINTAXE simplificando auto-atribuição
+      n = n + 4 <-- passa a ser n+=4 
+      ((só é possível quando a mesma variavel n recebe ELA mesmo + outro valor))  <-- vamos usar bastante essa SINTAXE
+      n-=5
+      n*=4
+      n/=2
+      n**=2
+      n%=5
+      reescrito de forma simplificada (( Necessário praticar no NODE e anotar CADERNO ))
       
 
    -->
