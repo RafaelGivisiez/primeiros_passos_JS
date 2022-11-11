@@ -20,7 +20,29 @@
       % <-- resto da divisão  5 % 2 = 1  (5 "PORCENTO 2" = RESTO 1)
       ** <-- potência   5 ** 2 = 25  (5 ao quadrado = 25)
 
+      PRECEDÊNCIA de Operadores:
+      
+      5 + 3 / 2 = 6.5   (faz primeiro a divisão a menos que você especifique colocando entre parentese a primeira ação a ser calculada)
+      (5 + 3) / 2 = 4   (Note que 5+3 está dentro dos parenteses, deixando claro ao programa que é a primeira ação a ser calculada na ordem de precedência)
 
+      ORDEM DE PRECEDÊNCIA DOS OPERADORES
+
+      1º  () <--- parenteses
+      2º  ** <--- potência
+      3º  * / %  <--- se tiver mais de um no mesmo calculo, ele fará o primeiro da esquerda até o ultimo da ordem
+      4º + - <--- adição e subtração "os basicos"
+
+      ATRIBUIÇÔES SIMPLES
+
+      var a = 5 + 3    (resposta: 8)
+      var b = a % 5    (resposta: 3) (a PORCENTO 5 <-- Lê:  RESTO da divisão entre A e 5)
+      var c = 5 * b ** 2 (resposta: 45) <-- fará primeiro a potência. 2º na ORDEM de PRECEDÊNCIA
+      var d = 10 - a / 2 (resposta: 6)  <-- fará primeiro a divisão, por conta da ORDEM de precedência
+      var e = 6 * 2 / d  (resposta: 2)   <-- MESMA ordem de precedência, faz quem aparece PRIMEIRO...
+      var f = b % e + 4 / e (resposta: 3)  <-- mesma ordem de precedência, faz quem aparece PRIMEIRO...
+      (((((((((((              Atribuições Simples está JPEG na pasta PRINT             )))))))))))
+
+      
 
    -->
 </body>
