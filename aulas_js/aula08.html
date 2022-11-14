@@ -36,11 +36,52 @@
       ||   <-- disjunções  'ou' lê (OU LÓGICO) "esse sinal se chama Piper (PAIPER)
 
       ex:  
-      eu ! quero uma caneta azul   <-- eu NAO quero uma caneta azul
-      eu quero uma caneta azul && uma caneta vermelha <--- eu quero uma caneta azul E uma caneta vermelha (quero as duas)
-      eu quero uma caneta azul || uma caneta vermelha <--- quero uma caneta azul OU uma vermelha (Quero ou uma ou outra)
+     ! <-- eu ! quero uma caneta azul   <-- eu NAO quero uma caneta azul
+      O não é tratado como operador unário <só tem um operano> ou é True ou False
+         !true -> fasle (uma coisa que NAO é verdadeira, é falsa)
+         !false -> true (uma coisa que NAO é falso, é verdadeiro)
+
+     && <-- eu quero uma caneta azul && uma caneta vermelha <--- eu quero uma caneta azul E uma caneta vermelha (quero as duas)
+      esse operador && é um operador binário, que tem dois valores lógicos.
+         true && true    -> True (só me satisfaz se as duas forem verdadeira)
+         true && false   -> false
+         false && true   -> false
+         false && false  -> false
+
+      || <-- eu quero uma caneta azul || uma caneta vermelha <--- quero uma caneta azul OU uma vermelha (Quero ou uma ou outra)
+      também é um operador binário que tem dois valores lógicos.
+         ture || true   <-- True (na DISJUNÇÃO basta que um só deles seja verdadeiro: LÊ uma caneta azul OU vermelha "Qualquer uma me satisfaz")
+         true || false  <-- True
+         false || true  <-- True
+         false || false <-- False (não consegui nem uma caneta azul nem uma caneta vermelha)
+      
+      EXEMPLOS em prática:
+         var a = 5
+         var b = 8
+         a > b && b % 2 == 0   "(E como comparação)um e outro <-- preciso que os dois sejam"
+         FALSE
+         a <= b || b / 2 == 2   "um OU outro, se um for já me basta"
+         TRUE
+
+      Se por acaso na mesma expressão tiver um E , OU e NÃO ( && , || , ! )
+      a ORDEM DE EXECUÇÃO SERÁ:
+         1º ! não
+         2º && ê
+         3º || ou
+
+      ex:
+      idade >= 15 && idade <= 17
+      (esse tipo de expressão é usada quando queremos dizer: "A idade está entre 15 e 17?")
+
+      estado == 'RJ' == estado == 'SP'
+      (Quer dizer: O estado é RJ OU SP)
+
+      salário > 1500 && sexo != 'M'
+      (Quer dizer: O salário é acima de 1500 e não é homem? ou 'É uma mulher que ganha mais que 1500?')
+      
+
 
       
-      
+
    -->></body>
 </html>
