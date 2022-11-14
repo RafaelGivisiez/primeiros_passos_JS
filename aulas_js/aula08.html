@@ -78,7 +78,69 @@
 
       salário > 1500 && sexo != 'M'
       (Quer dizer: O salário é acima de 1500 e não é homem? ou 'É uma mulher que ganha mais que 1500?')
+
+      __________________________________________________________
+      ORDEM DE PRECEDÊNCIA DE TODOS OS OPERADORES:
+
+      Aritiméticos: (Existe ordem de precedência)
+      () 
+      **  
+      /
+
+      Relacionais: (NÃO existe ordem de precedência quem aparecer primeiro será feito primeiro)
+      >
+      <
+      >=
+
+      Lógicos: (Existe ordem de precedência)
+      !
+      &&
+      ||
+      MUITO IMPORTANTE A ORDEM DE PRECEDÊNCIA DE TODOS OS OPERADORES
+      __________________________________________________________
       
+      OPERADOR TERNÁRIO: ? :  (interrogação e dois pontos na mesma operação)
+      são 3 blocos <-- por isso se chama ternário
+      ex:
+
+      test ? true : false
+      (média >=7.0 ? "aprovado" : "reprovado")
+
+         Var média = 5.5
+         média > 7? 'aprovado' : 'reprovado' (média maior que 7?(sefor) 'aprovado':(se não) 'reprovado')
+         'REPROVADO'
+
+         média += 3  (adiciona 3 a média que era 5.5, passando a ser 8.5 <- operador de atribuição)
+         8.5
+
+         média > 7 ? 'aprovado' : 'reprovado'
+         "APROVADO"
+
+      outro ex: 
+
+      var x = 8
+      var res = x % 2 == 0 ? 5 : 9 (variavel res vai receber ou 5 ou 9, vai depender se 5%2 igual a 0'ZERO')
+      
+      x == 8
+      res == 5 (por que x % 2 == 0 <-- então, res recebe 5 <-- senão res receberia 9)
+
+      "desenhando no NODE, terá PRINT da aula"
+
+      var x = 8  <-- variavel x  recebe 8
+
+            se    (isso) (igual) "?" entao var res recebe 5 ":" senao, var res recebe 9
+         var res = x % 2 == 0 ? 5 : 9
+
+         se resto da divisão de 8 por 2 for igual a zero "?" entao var res recebe 5
+         ":" senao, var res recebe 9
+
+      ex:
+      var idade = 19
+      var r = idade >= 18 ? 'MAIOR' : 'MENOR'
+      r == 'MAIOR'
+
+
+
 
 
       
