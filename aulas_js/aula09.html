@@ -18,18 +18,29 @@
    <h1>Iniciando os estudos com DOM</h1>
    <p>Aqui vai o resultado</p>
    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p> <!-- DOM significa: Document, Object, Model: modelo de objetos para documentos. basicamente um conjunto de objetos dentro do navegador que vai dar acesso aos componentes internos do website. o DOM não funciona dentro do NodeJS.-->
-   <div>Clique em mim</div>
+   <div id="msg">Clique em mim</div>
    <script>
       /* Selecionando Objetos POR MARCA abaixo \/ 
       getElementsByTagName */
-      var p1 = window.document.getElementsByTagName('p')[0] // seleciona o paragrafico que eu especificar dentro do colchete
+      var p1 = window.document.getElementsByTagName('p')[1] // seleciona o paragrafico que eu especificar dentro do colchete
       var corpo = window.document.body // variavel corpo receberá modificações que serão no BODY (localizando: window.document.body <-- localização)
-      window.document.write(p1.innerText) // replicará (trás pra dentro do java o conteúdo do p1 'primeiro parágrafo conforme especificado dentro do colchete')
+      //window.document.write(p1.innerText) // replicará (trás pra dentro do java o conteúdo do p1 'primeiro parágrafo conforme especificado dentro do colchete')
       p1.style.color = 'blue' // dentro do JS mudando a cor do primeiro parágrafo 
       corpo.style.background = 'black' // variável corpo recebendo mudança de cor 
       document.write(p1.innerHTML) //(p1.innterText   oouuu   p1.innerHTML <-- o innerHTML trás o texto formatado da forma que está originalmente no BODY, no caso deste parágrafico, a palavra DOM está em negrito, portando HTML trará ela em negrito, o TEXT não traria formatado como original)
+      //window.alert(p1.innerText) // .alert <-- traz a box de alerta com o testo p1.innerText
+      /*
+      OBS: Também podemos identificar (para modificar) um parágrafo por ID <--
+      getElementById() 
+
+      Também podemos identificar através do NOME do objeto pela propriedade NAME <--
+      getElementsByName() <-- Tem "S" está no plural, portanto, precisa usar o [] "colchete" pra direcionar qual Name estará selecioandno
       
-      window.alert(p1.innerText)
+      Também podemos identificar por CLASSE <--
+      getElementsByClassName() <-- Também no plural 
+      */
+      // ((( OBS ))) -->>>  "Coloquei um ID dentro da DIV no body, com nome 'MSG' ... "
+      var div =  window.document.getElementById('msg')
    </script>
 
 </body>
