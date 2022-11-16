@@ -22,11 +22,11 @@
    <script>
       /* Selecionando Objetos POR MARCA abaixo \/ 
       getElementsByTagName */
-      var p1 = window.document.getElementsByTagName('p')[0]
-      var corpo = window.document.body
-      window.document.write(p1.innerText)
-      p1.style.color = 'blue'
-      corpo.style.background = 'black'
+      var p1 = window.document.getElementsByTagName('p')[0] // seleciona o paragrafico que eu especificar dentro do colchete
+      var corpo = window.document.body // variavel corpo receberá modificações que serão no BODY (localizando: window.document.body <-- localização)
+      window.document.write(p1.innerText) // replicará (trás pra dentro do java o conteúdo do p1 'primeiro parágrafo conforme especificado dentro do colchete')
+      p1.style.color = 'blue' // dentro do JS mudando a cor do primeiro parágrafo 
+      corpo.style.background = 'black' // variável corpo recebendo mudança de cor 
 
    </script>
 
