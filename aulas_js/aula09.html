@@ -41,6 +41,11 @@
       */
       // ((( OBS ))) -->>>  "Coloquei um ID dentro da DIV no body, com nome 'MSG' ... "
       var div =  window.document.getElementById('msg')
+      /* Foi colocado um ID recebendo o nome 'MSG' dentro da DIV <---
+      Selecionou a DIV que estava no BODY (parte HTML) e trouxe pro JS, para variavel criada DIV, e agora a variavel
+      DIV = recebe o comando getElementById('msg') ... dessa forma, poderemos modifica-la dentro do JS */
+      div.style.background = 'green'
+      window.document.getElementById('msg').innerText = 'Olá!'
    </script>
 
 </body>
