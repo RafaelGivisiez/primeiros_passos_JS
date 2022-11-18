@@ -22,12 +22,16 @@
         onmouseenter="entrar()" <-- quando passar o mouse
         onmouseout="sair()" <--- quando sair com mouse
    -->
-   <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
+   <div id="area"> <!-- onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()"  <---- Essa é a forma dos códigos dos eventos dentro do HTML, 
+                                                                                 anulei ela para deixar o mesmo código agora rodando dentro do script JS
+   -->
       Interaja...
    </div>
    
    <script>
       var area = window.document.getElementById('area')
+      area.addEventListener('clicar', clicar) // mesma função do HTML porem no JS agora, "para quando clicar com mouse"
+      area.addEventLIstner('mouseenter', entrar) // para quando entrar com mouse na BOX
 
          function clicar() {
             // Tudo que estiver aqui dentro, só será executado quando "chamar o CLICAR" que está na DIV
