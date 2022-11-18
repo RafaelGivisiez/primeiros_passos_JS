@@ -22,25 +22,26 @@
         onmouseenter="entrar()" <-- quando passar o mouse
         onmouseout="sair()" <--- quando sair com mouse
    -->
-   <div id="area"> <!-- onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()"  <---- Essa é a forma dos códigos dos eventos dentro do HTML, 
-                                                                                 anulei ela para deixar o mesmo código agora rodando dentro do script JS
+   <div id="area"> 
+   <!-- onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()"  <---- Essa é a forma dos códigos dos eventos dentro do HTML, 
+    anulei ela para deixar o mesmo código agora rodando dentro do script JS
    -->
       Interaja...
    </div>
    
    <script>
       var area = window.document.getElementById('area')
-      area.addEventListener('clicar', Clicar) // mesma função do HTML porem no JS agora, "para quando clicar com mouse"
-      area.addEventLIstener('mouseenter', Entrar) // para quando entrar com mouse na BOX
-      area.addEventListener('mouseout', Sair) // para quando sair com cursor do mouse na BOX
+      area.addEventListener('click', Clicar) 
+      area.addEventListener('mouseenter', entrar)
+      area.addEventListener('mouseout', sair)
 
-      function clicar() {
+      function Clicar() {
             // Tudo que estiver aqui dentro, só será executado quando "chamar o CLICAR" que está na DIV
          area.innerText = 'Clicou!' // digita a mensagem "clicou" quando clicar na box
          area.style.background = 'red' // quando clicar muda a cor pra vermelho
       }
       function entrar() {
-         rea.innerText = 'Entrou!' // digita a mensagem "entrou" quando passa o com mouse em cima da BOX
+         area.innerText = 'Entrou!' // digita a mensagem "entrou" quando passa o com mouse em cima da BOX
          area.style.background = 'silver' // quando passar o mouse em cima, muda a cor da box pra cinza
       }
       function sair() {
