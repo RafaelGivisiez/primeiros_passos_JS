@@ -15,7 +15,7 @@
    <script>
       function somar() {
          var tn1 = window.document.getElementById('txtn1') // uma forma de puxar o "txtn1"
-         var tn2 = window.document.querySelector('input#textn2') // outra forma de puxar o "txtn2"
+         var tn2 = window.document.window.document.getElementById('textn2') //querySelector('input#textn2')
          var res = window.document.getElementById('res')
          var n1 = Number.(tn1.value)
          var n2 = Number.(tn2.value)
