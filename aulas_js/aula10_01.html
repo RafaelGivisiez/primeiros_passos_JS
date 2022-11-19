@@ -14,7 +14,9 @@
       div#res {
          margin-top: 20px;
       }
-
+      input {
+         width: 100px;
+      }
    </style>
 </head>
 <body>
@@ -32,7 +34,7 @@
          var n1 = Number(tn1.value)
          var n2 = Number(tn2.value)
          var s = n1 + n2
-         res.innerHTML = `RESULTADO: ${s}` // (   ${s} <-- place rolder "nao sei como escreve" só pra nao esquecer, já foi visto em aula)
+         res.innerHTML = `RESULTADO: <strong>${s}</strong>` // (   ${s} <-- place rolder "nao sei como escreve" só pra nao esquecer, já foi visto em aula)
       }
    </script>
 </body>
